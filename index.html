@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<head><!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mah Noor — AI Agent Developer</title>
-<meta name="description" content="AI Agent Developer building production-grade agents, LLM integrations, and automation systems.">
+<title>Mah Noor — AI Engineer</title>
+<meta name="description" content="AI engineering graduate working on computer vision nd also builds production LLM agents.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -369,11 +371,11 @@
 
 <section class="hero">
   <div class="wrap">
-    <div class="eyebrow"><span class="pulse"></span>AVAILABLE FOR NEW ROLES</div>
-    <h1>I build AI agents that <span class="grad">go into production</span>, not just demos.</h1>
-    <p class="lede">AI Agent Developer specializing in LLM-integrated automation — connecting Gemini, Claude, and OpenAI to real business systems through APIs, webhooks, and RAG pipelines.</p>
+    <div class="eyebrow"><span class="pulse"></span>Graduate student</div>
+    <h1>I build computer vision systems and test how they <span class="grad">hold up in the real world</span>.</h1>
+    <p class="lede">AI Engineering graduate (NTU Faisalabad) working on object detection and robustness to fog and low light with YOLOv8, OpenCV and PyTorch. I also build production LLM agents and automation systems.</p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="#work">View projects ↓</a>
+      <a class="btn btn-primary" href="#cv">View research project ↓</a>
       <a class="btn btn-ghost" href="mailto:noor03012066@gmail.com">Say hello</a>
     </div>
 
@@ -427,7 +429,7 @@
       <div>
         <p>I'm an AI Engineering graduate (National Textile University) who moved past prototypes early — my work has focused on shipping AI agents that real businesses actually run on. That means <strong>handling the messy parts</strong>: binary data getting overwritten mid-workflow, branching logic for hot vs. warm leads, keeping a WhatsApp agent's tone consistent with a live menu and pricing policy.</p>
         <p>I work primarily in <strong>n8n for orchestration</strong> and <strong>Python/Flask for backend services</strong>, integrating LLMs (Gemini, Claude, OpenAI) with tool calling, retrieval-augmented generation, and vector databases like Pinecone. I'm currently extending into code-first agent frameworks (LangChain/LangGraph) and cloud deployment.</p>
-        <p>Every project below is either live with a real client or actively in development — nothing here is a disconnected tutorial exercise.</p>
+        <p>Every project below is either live with a real client, actively in development, or a research experiment with its limitations written down.</p>
       </div>
       <div class="stat-list">
         <div class="stat" style="border-color:var(--violet)"><b style="color:var(--violet)">5</b><span>Production AI agents shipped</span></div>
@@ -443,9 +445,28 @@
     <div class="head-row">
       <div>
         <div class="head-tag" style="color:var(--teal)">02 — Selected work</div>
-        <h2>Agents running in the real world</h2>
+        <h2>Computer vision research, then production AI</h2>
       </div>
-      <p>Each one shown as it actually runs: trigger, processing, integration, outcome.</p>
+      <p>A computer vision experiment first, followed by agents running in production.</p>
+    </div>
+
+    <!-- Computer vision project -->
+    <div class="project-card" id="cv">
+      <div class="project-top">
+        <div><h3>Robust Road Object Detection in Fog and Low Light</h3></div>
+        <span class="project-status status-dev">◐ Research project</span>
+      </div>
+      <div class="pipeline">
+        <div class="pipe-step" style="--step-color:var(--blue)"><span class="k">Data</span><span class="v">Public road-scene dataset, 900 images, 5 classes</span></div>
+        <div class="pipe-step" style="--step-color:var(--violet)"><span class="k">Stress test</span><span class="v">Synthetic fog and darkening (OpenCV, NumPy)</span></div>
+        <div class="pipe-step" style="--step-color:var(--teal)"><span class="k">Train</span><span class="v">YOLOv8n baseline vs fog/dark-augmented</span></div>
+        <div class="pipe-step" style="--step-color:var(--amber)"><span class="k">Result</span><span class="v">Heavy-fog car+person mAP50 0.81 → 0.98 (synthetic)</span></div>
+      </div>
+      <p class="project-desc">An experiment on how detectors degrade in low visibility. The baseline drops under heavy synthetic fog; adding fog and dark copies to the training set recovers it with no change on clean images. Limitations: the corruptions are synthetic, the test set has 100 images, and only car and person classes are scored. Next step: real foggy data, a dehazing comparison and architecture-level robustness. Full details are in the README.</p>
+      <div class="chips">
+        <span class="chip">Ultralytics YOLOv8</span><span class="chip">PyTorch</span><span class="chip">OpenCV</span><span class="chip">NumPy / Pandas</span><span class="chip">Matplotlib</span><span class="chip">mAP / IoU evaluation</span>
+        <a class="code-link" href="https://github.com/Mahnoor-prog/road-detection-fog-lowlight" target="_blank" rel="noopener">View code ↗</a>
+      </div>
     </div>
 
     <!-- Project 1 -->
@@ -556,6 +577,680 @@
       </div>
     </div>
     <div class="skills-grid">
+      <div class="skill-group" style="--group-color:var(--pink)">
+        <h4>Computer Vision</h4>
+        <div class="chips">
+          <span class="chip">Object Detection (YOLOv8)</span><span class="chip">Ultralytics</span><span class="chip">PyTorch</span>
+          <span class="chip">OpenCV</span><span class="chip">NumPy / Pandas</span><span class="chip">Matplotlib</span>
+          <span class="chip">Data Augmentation</span><span class="chip">mAP / IoU Evaluation</span><span class="chip">Roboflow</span>
+        </div>
+      </div>
+      <div class="skill-group" style="--group-color:var(--violet)">
+        <h4>AI / LLM & Agent Development</h4>
+        <div class="chips">
+          <span class="chip">Google Gemini</span><span class="chip">Anthropic Claude</span><span class="chip">OpenAI</span>
+          <span class="chip">Tool / Function Calling</span><span class="chip">RAG</span><span class="chip">Pinecone</span><span class="chip">Prompt Engineering</span>
+        </div>
+      </div>
+      <div class="skill-group" style="--group-color:var(--teal)">
+        <h4>Automation Platforms</h4>
+        <div class="chips">
+          <span class="chip">n8n (production)</span><span class="chip">Workflow Orchestration</span><span class="chip">Webhook-Driven Pipelines</span>
+        </div>
+      </div>
+      <div class="skill-group" style="--group-color:var(--blue)">
+        <h4>Backend & APIs</h4>
+        <div class="chips">
+          <span class="chip">Python</span><span class="chip">Flask</span><span class="chip">REST APIs</span><span class="chip">JWT Auth</span>
+        </div>
+      </div>
+      <div class="skill-group" style="--group-color:var(--amber)">
+        <h4>Integrations</h4>
+        <div class="chips">
+          <span class="chip">Google Calendar</span><span class="chip">Google Sheets</span><span class="chip">Gmail</span><span class="chip">Slack</span><span class="chip">WhatsApp / Evolution API</span>
+        </div>
+      </div>
+      <div class="skill-group" style="--group-color:var(--pink)">
+        <h4>Data & ML</h4>
+        <div class="chips">
+          <span class="chip">MongoDB</span><span class="chip">Firebase</span><span class="chip">TensorFlow</span><span class="chip">Scikit-learn</span><span class="chip">OpenCV</span>
+        </div>
+      </div>
+      <div class="skill-group" style="--group-color:var(--text-dim)">
+        <h4>Currently expanding into</h4>
+        <div class="chips">
+          <span class="chip">LangChain / LangGraph</span><span class="chip">Cloud (AWS/Azure/GCP)</span><span class="chip">SQL databases</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad" id="education">
+  <div class="wrap">
+    <div class="head-row">
+      <div>
+        <div class="head-tag" style="color:var(--amber)">04 — Education</div>
+        <h2>Foundation</h2>
+      </div>
+    </div>
+    <div class="edu-card">
+      <div>
+        <h3>B.S. Artificial Intelligence</h3>
+        <div class="sub">National Textile University, Faisalabad, Pakistan</div>
+        <div class="chips">
+          <span class="chip">Machine Learning</span><span class="chip">Deep Learning</span><span class="chip">NLP</span>
+          <span class="chip">Computer Vision</span><span class="chip">Information Security</span><span class="chip">Networking</span>
+        </div>
+      </div>
+      <div class="edu-side">Final Year Project<br>"Code Learn Hub"</div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad" id="contact">
+  <div class="wrap">
+    <div class="contact-box">
+      <h2>Let's build something that solve real world problems</h2>
+      <p></p>
+      <div class="contact-links">
+        <a class="btn btn-primary" href="mailto:noor03012066@gmail.com">noor03012066@gmail.com</a>
+        <a class="btn btn-ghost" href="https://github.com/Mahnoor-prog" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/mah-noor-850816370" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Mah Noor — Faisalabad, Pakistan · Built by hand, not a template.</div>
+</footer>
+
+</body>
+</html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mah Noor — AI Graduate</title>
+<meta name="description" content="AI engineering graduate working on computer vision and robust object detection. Also builds production LLM agents.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #FAFBFD;
+    --bg-elevated: #FFFFFF;
+    --surface: #F1F4F8;
+    --surface-hover: #E8ECF2;
+    --border: #E1E6ED;
+    --border-bright: #C7CEDA;
+    --text: #171B26;
+    --text-muted: #565F72;
+    --text-dim: #8A93A6;
+    --accent: #6C4CE0;
+    --accent-soft: rgba(108,76,224,0.09);
+    --accent-2: #0C8F76;
+    --accent-2-soft: rgba(12,143,118,0.10);
+    --warn: #B4650A;
+    --violet: #6C4CE0;
+    --violet-soft: rgba(108,76,224,0.10);
+    --teal: #0C8F76;
+    --teal-soft: rgba(12,143,118,0.10);
+    --blue: #2563EB;
+    --blue-soft: rgba(37,99,235,0.09);
+    --amber: #C2760C;
+    --amber-soft: rgba(194,118,12,0.10);
+    --pink: #C2277A;
+    --pink-soft: rgba(194,39,122,0.09);
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --max-w: 1100px;
+  }
+
+  *{ box-sizing: border-box; margin:0; padding:0; }
+  html{ scroll-behavior: smooth; }
+  body{
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  body::before{
+    content: "";
+    position: fixed; inset: 0;
+    background:
+      radial-gradient(ellipse 900px 500px at 12% -5%, rgba(108,76,224,0.09), transparent 60%),
+      radial-gradient(ellipse 700px 500px at 100% 8%, rgba(12,143,118,0.08), transparent 60%),
+      radial-gradient(ellipse 600px 400px at 60% 40%, rgba(194,118,12,0.05), transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  a{ color: inherit; text-decoration: none; }
+  img{ max-width: 100%; display:block; }
+  section{ position: relative; z-index: 1; }
+
+  ::selection{ background: var(--accent); color: #fff; }
+
+  :focus-visible{
+    outline: 2px solid var(--accent-2);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  .wrap{
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* ---------- NAV ---------- */
+  header{
+    position: sticky; top:0; z-index: 50;
+    background: rgba(250,251,253,0.82);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  nav.wrap{
+    display:flex; align-items:center; justify-content: space-between;
+    height: 68px;
+  }
+  .logo{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.01em;
+    display:flex; align-items:center; gap:8px;
+  }
+  .logo-dot{ width:8px; height:8px; border-radius:2px; background: linear-gradient(135deg, var(--violet), var(--teal)); box-shadow: 0 0 10px rgba(12,143,118,0.4); flex-shrink:0; }
+  .navlinks{ display:flex; gap: 32px; font-size: 14px; color: var(--text-muted); }
+  .navlinks a{ transition: color .15s; }
+  .navlinks a:hover{ color: var(--text); }
+  .nav-cta{
+    font-family: var(--font-mono);
+    font-size: 13px;
+    padding: 8px 16px;
+    border: 1px solid var(--border-bright);
+    border-radius: 6px;
+    color: var(--text);
+    transition: border-color .15s, background .15s;
+  }
+  .nav-cta:hover{ border-color: var(--accent-2); background: var(--accent-2-soft); }
+  .navlinks-mobile{ display:none; }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding: 88px 0 70px;
+  }
+  .eyebrow{
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--accent-2);
+    display:flex; align-items:center; gap:10px;
+    margin-bottom: 22px;
+  }
+  .eyebrow .pulse{
+    width:7px; height:7px; border-radius:50%; background: var(--accent-2);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse{ 0%,100%{ opacity:1; transform:scale(1);} 50%{ opacity:.4; transform:scale(0.7);} }
+
+  .hero h1{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(36px, 6vw, 60px);
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    max-width: 820px;
+  }
+  .hero h1 .grad{
+    background: linear-gradient(100deg, var(--violet), var(--teal) 60%, var(--amber));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .hero p.lede{
+    margin-top: 22px;
+    font-size: 18px;
+    color: var(--text-muted);
+    max-width: 620px;
+  }
+  .hero-actions{
+    display:flex; gap:14px; margin-top: 34px; flex-wrap: wrap;
+  }
+  .btn{
+    font-family: var(--font-mono);
+    font-size: 14px;
+    padding: 12px 22px;
+    border-radius: 7px;
+    display:inline-flex; align-items:center; gap:8px;
+    transition: transform .15s, box-shadow .15s, background .15s, border-color .15s;
+  }
+  .btn-primary{
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 0 0 0 rgba(108,76,224,0.3);
+  }
+  .btn-primary:hover{ transform: translateY(-1px); box-shadow: 0 8px 24px rgba(108,76,224,0.25); }
+  .btn-ghost{
+    border: 1px solid var(--border-bright);
+    color: var(--text);
+  }
+  .btn-ghost:hover{ border-color: var(--accent-2); background: var(--accent-2-soft); }
+
+  /* ---------- WORKFLOW SIGNATURE DIAGRAM ---------- */
+  .flow-wrap{
+    margin-top: 64px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: linear-gradient(180deg, var(--bg-elevated), var(--bg));
+    padding: 30px 20px 22px;
+    overflow-x: auto;
+  }
+  .flow-label{
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 18px;
+  }
+  svg.flow{ display:block; width:100%; min-width: 680px; height: auto; }
+  .flow-node-box{ fill: var(--surface); stroke: var(--border-bright); stroke-width:1; }
+  .flow-node-title{ font-family: var(--font-mono); font-size: 12.5px; fill: var(--text); font-weight: 500; }
+  .flow-node-sub{ font-family: var(--font-body); font-size: 11px; fill: var(--text-dim); }
+  .flow-path{
+    fill:none; stroke: var(--border-bright); stroke-width: 1.5;
+  }
+  .flow-path-active{
+    fill:none; stroke: var(--accent-2); stroke-width: 1.5;
+    stroke-dasharray: 5 5;
+    animation: dash 1.6s linear infinite;
+  }
+  @keyframes dash{ to{ stroke-dashoffset: -20; } }
+  .flow-dot{ fill: var(--accent-2); filter: drop-shadow(0 0 5px var(--accent-2)); }
+
+  @media (prefers-reduced-motion: reduce){
+    .eyebrow .pulse, .flow-path-active, .flow-dot{ animation: none !important; }
+  }
+
+  /* ---------- SECTION HEADS ---------- */
+  .section-pad{ padding: 84px 0; border-top: 1px solid var(--border); }
+  .head-row{
+    display:flex; align-items:baseline; justify-content: space-between;
+    margin-bottom: 44px; gap: 20px; flex-wrap: wrap;
+  }
+  .head-tag{
+    font-family: var(--font-mono); font-size: 12px; color: var(--accent-2);
+    text-transform: uppercase; letter-spacing: 0.1em; margin-bottom:10px;
+  }
+  .head-row h2{
+    font-family: var(--font-display); font-size: clamp(26px, 3.4vw, 34px); font-weight: 600;
+  }
+  .head-row p{ color: var(--text-muted); max-width: 420px; font-size: 14.5px; }
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{
+    display:grid; grid-template-columns: 1.3fr 1fr; gap: 50px;
+  }
+  .about-grid p{ color: var(--text-muted); font-size: 16px; margin-bottom: 16px; }
+  .about-grid strong{ color: var(--text); font-weight: 600; }
+  .stat-list{ display:flex; flex-direction:column; gap: 22px; }
+  .stat{ border-left: 2px solid var(--accent); padding-left: 18px; }
+  .stat b{
+    font-family: var(--font-display); font-size: 28px; display:block; color: var(--text);
+  }
+  .stat span{ font-size: 13px; color: var(--text-dim); }
+
+  /* ---------- PROJECTS ---------- */
+  .project-card{
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--bg-elevated);
+    padding: 30px;
+    margin-bottom: 22px;
+    transition: border-color .2s, transform .2s;
+  }
+  .project-card:hover{ border-color: var(--border-bright); }
+  .project-top{
+    display:flex; justify-content: space-between; align-items:flex-start; gap: 20px; margin-bottom: 18px; flex-wrap: wrap;
+  }
+  .project-top h3{
+    font-family: var(--font-display); font-size: 21px; font-weight: 600; margin-bottom: 6px;
+  }
+  .project-status{
+    font-family: var(--font-mono); font-size: 11px; padding: 4px 10px; border-radius: 20px;
+    white-space: nowrap; height: fit-content;
+  }
+  .status-live{ background: var(--accent-2-soft); color: var(--accent-2); border:1px solid rgba(12,143,118,0.28); }
+  .status-dev{ background: rgba(180,101,10,0.08); color: var(--warn); border:1px solid rgba(180,101,10,0.28); }
+
+  .pipeline{
+    display:grid; grid-template-columns: repeat(4, 1fr);
+    gap: 10px; margin: 20px 0;
+  }
+  .pipe-step{
+    background: var(--surface); border: 1px solid var(--border);
+    border-top: 3px solid var(--step-color, var(--border-bright));
+    border-radius: 8px; padding: 12px 14px;
+  }
+  .pipe-step .k{
+    font-family: var(--font-mono); font-size: 10px; color: var(--step-color, var(--text-dim));
+    text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 5px; display:block;
+    font-weight: 600;
+  }
+  .pipe-step .v{ font-size: 13px; color: var(--text); line-height:1.4; }
+
+  .project-desc{ color: var(--text-muted); font-size: 14.5px; margin: 16px 0; }
+
+  .chips{ display:flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; align-items: center; }
+  .code-link{
+    font-family: var(--font-mono); font-size: 12px; color: var(--accent);
+    border: 1px solid var(--accent); padding: 5px 13px; border-radius: 20px;
+    margin-left: auto; transition: background .15s, color .15s;
+  }
+  .code-link:hover{ background: var(--accent); color: #fff; }
+  .chip{
+    font-family: var(--font-mono); font-size: 11.5px; color: var(--text-muted);
+    border: 1px solid var(--border); padding: 5px 11px; border-radius: 20px;
+  }
+
+  .other-projects{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 30px; }
+  .mini-card{
+    border: 1px solid var(--border); border-radius: 10px; padding: 20px;
+    background: var(--bg-elevated);
+  }
+  .mini-card h4{ font-family: var(--font-display); font-size: 15.5px; margin-bottom: 6px; font-weight:600; }
+  .mini-card p{ font-size: 13px; color: var(--text-muted); margin-bottom: 10px; }
+  .mini-card .chips{ margin-top: 6px; }
+  .mini-card .chip{ font-size: 10.5px; padding:3px 9px; }
+
+  /* ---------- SKILLS ---------- */
+  .skills-grid{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .skill-group{
+    border: 1px solid var(--border); border-radius: 12px; padding: 22px;
+    background: var(--bg-elevated);
+    border-top: 3px solid var(--group-color, var(--border-bright));
+  }
+  .skill-group h4{
+    font-family: var(--font-mono); font-size: 12px; color: var(--group-color, var(--accent-2));
+    text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 14px;
+  }
+  .skill-group .chips .chip{ color: var(--text); border-color: var(--border); }
+  .skill-group .chips .chip:nth-child(odd){ background: color-mix(in srgb, var(--group-color, var(--accent-2)) 7%, transparent); }
+
+  /* ---------- EDUCATION ---------- */
+  .edu-card{
+    border: 1px solid var(--border); border-radius: 14px; padding: 30px;
+    background: var(--bg-elevated);
+    display:flex; justify-content: space-between; gap:20px; flex-wrap:wrap;
+  }
+  .edu-card h3{ font-family: var(--font-display); font-size: 19px; margin-bottom: 4px; }
+  .edu-card .sub{ color: var(--text-muted); font-size: 14px; margin-bottom: 14px;}
+  .edu-card .chips{ max-width: 520px; }
+  .edu-side{ font-family: var(--font-mono); font-size: 13px; color: var(--text-dim); text-align:right; }
+
+  /* ---------- CONTACT / FOOTER ---------- */
+  .contact-box{
+    border: 1px solid var(--border); border-radius: 18px;
+    padding: 60px 40px; text-align:center;
+    background: radial-gradient(ellipse 550px 280px at 30% 0%, var(--violet-soft), transparent 70%),
+                radial-gradient(ellipse 550px 280px at 75% 20%, var(--pink-soft), transparent 70%),
+                var(--bg-elevated);
+  }
+  .contact-box h2{
+    font-family: var(--font-display); font-size: clamp(26px,4vw,38px); font-weight:700; margin-bottom: 14px;
+  }
+  .contact-box p{ color: var(--text-muted); margin-bottom: 30px; font-size: 15.5px; }
+  .contact-links{ display:flex; justify-content:center; gap: 14px; flex-wrap: wrap; }
+
+  footer{
+    padding: 34px 0 50px; text-align:center;
+    color: var(--text-dim); font-size: 13px; font-family: var(--font-mono);
+  }
+
+  @media (max-width: 800px){
+    .navlinks{ display:none; }
+    .about-grid{ grid-template-columns: 1fr; }
+    .pipeline{ grid-template-columns: 1fr 1fr; }
+    .skills-grid{ grid-template-columns: 1fr; }
+    .other-projects{ grid-template-columns: 1fr; }
+    .section-pad{ padding: 60px 0; }
+    .contact-box{ padding: 44px 22px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="logo"><span class="logo-dot"></span>Mah Noor</div>
+    <div class="navlinks">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+    </div>
+    <a class="nav-cta" href="#contact">Get in touch</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="pulse"></span>APPLYING FOR MASTER'S 2027 · COMPUTER VISION</div>
+    <h1>I build computer vision systems and test how they <span class="grad">hold up in the real world</span>.</h1>
+    <p class="lede">AI Engineering graduate (NTU Faisalabad) working on object detection and robustness to fog and low light with YOLOv8, OpenCV and PyTorch. I also build production LLM agents and automation systems.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#cv">View research project ↓</a>
+      <a class="btn btn-ghost" href="mailto:noor03012066@gmail.com">Say hello</a>
+    </div>
+
+    <div class="flow-wrap">
+      <div class="flow-label">// how a project moves through my pipeline</div>
+      <svg class="flow" viewBox="0 0 900 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Workflow: Business need leads to agent design, LLM plus tools, then production system">
+        <!-- connecting paths -->
+        <path class="flow-path-active" d="M170,70 L280,70"></path>
+        <path class="flow-path-active" d="M460,70 L570,70"></path>
+        <path class="flow-path-active" d="M750,70 L810,70"></path>
+
+        <!-- traveling dot -->
+        <circle class="flow-dot" r="3.5">
+          <animateMotion dur="3.2s" repeatCount="indefinite"
+            path="M10,70 L170,70 L170,70 L280,70 L460,70 L570,70 L750,70 L810,70 L860,70" />
+        </circle>
+
+        <!-- node 1 -->
+        <rect class="flow-node-box" x="10" y="40" width="160" height="60" rx="8"></rect>
+        <text class="flow-node-title" x="26" y="66">Business need</text>
+        <text class="flow-node-sub" x="26" y="84">"Automate invoice intake"</text>
+
+        <!-- node 2 -->
+        <rect class="flow-node-box" x="280" y="40" width="180" height="60" rx="8"></rect>
+        <text class="flow-node-title" x="296" y="66">Agent design</text>
+        <text class="flow-node-sub" x="296" y="84">tools · memory · branching</text>
+
+        <!-- node 3 -->
+        <rect class="flow-node-box" x="570" y="40" width="180" height="60" rx="8"></rect>
+        <text class="flow-node-title" x="586" y="66">LLM + integrations</text>
+        <text class="flow-node-sub" x="586" y="84">Gemini · Sheets · Slack · WA</text>
+
+        <!-- node 4 -->
+        <rect class="flow-node-box" x="810" y="40" width="80" height="60" rx="8" style="stroke:var(--accent-2)"></rect>
+        <text class="flow-node-title" x="822" y="66" style="fill:var(--accent-2)">Live</text>
+        <text class="flow-node-sub" x="822" y="84">in prod</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad" id="about">
+  <div class="wrap">
+    <div class="head-row">
+      <div>
+        <div class="head-tag" style="color:var(--violet)">01 — About</div>
+        <h2>From concept to production, end to end.</h2>
+      </div>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p>I'm an AI Engineering graduate (National Textile University) who moved past prototypes early — my work has focused on shipping AI agents that real businesses actually run on. That means <strong>handling the messy parts</strong>: binary data getting overwritten mid-workflow, branching logic for hot vs. warm leads, keeping a WhatsApp agent's tone consistent with a live menu and pricing policy.</p>
+        <p>I work primarily in <strong>n8n for orchestration</strong> and <strong>Python/Flask for backend services</strong>, integrating LLMs (Gemini, Claude, OpenAI) with tool calling, retrieval-augmented generation, and vector databases like Pinecone. I'm currently extending into code-first agent frameworks (LangChain/LangGraph) and cloud deployment.</p>
+        <p>Every project below is either live with a real client, actively in development, or a research experiment with its limitations written down.</p>
+      </div>
+      <div class="stat-list">
+        <div class="stat" style="border-color:var(--violet)"><b style="color:var(--violet)">5</b><span>Production AI agents shipped</span></div>
+        <div class="stat" style="border-color:var(--teal)"><b style="color:var(--teal)">7+</b><span>Third-party integrations (Calendar, Sheets, Slack, Gmail, WhatsApp)</span></div>
+        <div class="stat" style="border-color:var(--amber)"><b style="color:var(--amber)">768</b><span>Dimension vector search live in production (Pinecone)</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad" id="work">
+  <div class="wrap">
+    <div class="head-row">
+      <div>
+        <div class="head-tag" style="color:var(--teal)">02 — Selected work</div>
+        <h2></h2>
+      </div>
+   
+    </div>
+
+    <!-- Computer vision project -->
+    <div class="project-card" id="cv">
+      <div class="project-top">
+        <div><h3>Robust Road Object Detection in Fog and Low Light</h3></div>
+        <span class="project-status status-dev">◐ Research project</span>
+      </div>
+      <div class="pipeline">
+        <div class="pipe-step" style="--step-color:var(--blue)"><span class="k">Data</span><span class="v">Public road-scene dataset, 900 images, 5 classes</span></div>
+        <div class="pipe-step" style="--step-color:var(--violet)"><span class="k">Stress test</span><span class="v">Synthetic fog and darkening (OpenCV, NumPy)</span></div>
+        <div class="pipe-step" style="--step-color:var(--teal)"><span class="k">Train</span><span class="v">YOLOv8n baseline vs fog/dark-augmented</span></div>
+        <div class="pipe-step" style="--step-color:var(--amber)"><span class="k">Result</span><span class="v">Heavy-fog car+person mAP50 0.81 → 0.98 (synthetic)</span></div>
+      </div>
+      <p class="project-desc">An experiment on how detectors degrade in low visibility. The baseline drops under heavy synthetic fog; adding fog and dark copies to the training set recovers it with no change on clean images. Limitations: the corruptions are synthetic, the test set has 100 images, and only car and person classes are scored. Next step: real foggy data, a dehazing comparison and architecture-level robustness. Full details are in the README.</p>
+      <div class="chips">
+        <span class="chip">Ultralytics YOLOv8</span><span class="chip">PyTorch</span><span class="chip">OpenCV</span><span class="chip">NumPy / Pandas</span><span class="chip">Matplotlib</span><span class="chip">mAP / IoU evaluation</span>
+        <a class="code-link" href="https://github.com/Mahnoor-prog/road-detection-fog-lowlight" target="_blank" rel="noopener">View code ↗</a>
+      </div>
+    </div>
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-top">
+        <div>
+          <h3>AI Invoice Processing Agent</h3>
+        </div>
+        <span class="project-status status-live">● Live</span>
+      </div>
+      <div class="pipeline">
+        <div class="pipe-step" style="--step-color:var(--blue)"><span class="k">Trigger</span><span class="v">Webhook — invoice upload</span></div>
+        <div class="pipe-step" style="--step-color:var(--violet)"><span class="k">Process</span><span class="v">Gemini extraction + data-integrity fix</span></div>
+        <div class="pipe-step" style="--step-color:var(--teal)"><span class="k">Integrate</span><span class="v">Sheets · Drive · Gmail</span></div>
+        <div class="pipe-step" style="--step-color:var(--amber)"><span class="k">Outcome</span><span class="v">Logged, filed, notified — automatically</span></div>
+      </div>
+      <p class="project-desc">Solved a hard, unglamorous problem: binary invoice data was silently overwritten by file-metadata mid-pipeline. Traced it back to the source webhook and rebuilt the data flow so nothing gets lost between extraction and filing. Paired with a React dashboard showing live spend trends computed from real invoice data.</p>
+      <div class="chips">
+        <span class="chip">n8n</span><span class="chip">Google Gemini API</span><span class="chip">Google Sheets</span><span class="chip">Google Drive</span><span class="chip">Gmail</span><span class="chip">React / Recharts</span>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-top">
+        <div><h3>AI Lead Response & Booking Agent</h3></div>
+        <span class="project-status status-live">● Live</span>
+      </div>
+      <div class="pipeline">
+        <div class="pipe-step" style="--step-color:var(--blue)"><span class="k">Trigger</span><span class="v">New lead — form / webhook</span></div>
+        <div class="pipe-step" style="--step-color:var(--violet)"><span class="k">Process</span><span class="v">Gemini qualification — hot/warm branch</span></div>
+        <div class="pipe-step" style="--step-color:var(--teal)"><span class="k">Integrate</span><span class="v">Calendar · Sheets CRM · Slack</span></div>
+        <div class="pipe-step" style="--step-color:var(--amber)"><span class="k">Outcome</span><span class="v">Booked, logged, followed up</span></div>
+      </div>
+      <p class="project-desc">A lead never sits untouched: the agent scores intent, books qualified leads straight into the calendar, logs everything to a Sheets-based CRM, and pings the team on Slack while sending a Gmail follow-up — verified end-to-end against real lead data.</p>
+      <div class="chips">
+        <span class="chip">n8n</span><span class="chip">Google Gemini API</span><span class="chip">Google Calendar</span><span class="chip">Slack</span><span class="chip">Gmail</span>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-top">
+        <div><h3>WhatsApp AI Order Automation — Cloud Nine Cakes</h3></div>
+        <span class="project-status status-live">● Live</span>
+      </div>
+      <div class="pipeline">
+        <div class="pipe-step" style="--step-color:var(--blue)"><span class="k">Trigger</span><span class="v">Incoming WhatsApp message</span></div>
+        <div class="pipe-step" style="--step-color:var(--violet)"><span class="k">Process</span><span class="v">Gemini agent — full menu & policy prompt</span></div>
+        <div class="pipe-step" style="--step-color:var(--teal)"><span class="k">Integrate</span><span class="v">Evolution API · Google Sheets</span></div>
+        <div class="pipe-step" style="--step-color:var(--amber)"><span class="k">Outcome</span><span class="v">Orders taken, logged — 24/7</span></div>
+      </div>
+      <p class="project-desc">Built for a real cakehouse business: the agent holds a natural WhatsApp conversation, quotes accurate pricing, and logs every order — running on a system prompt that encodes the actual menu and store policy, not a generic FAQ bot.</p>
+      <div class="chips">
+        <span class="chip">n8n</span><span class="chip">Evolution API</span><span class="chip">Google Gemini API</span><span class="chip">Google Sheets</span>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card">
+      <div class="project-top">
+        <div><h3>RAG-Based Company Documents Q&A Chatbot</h3></div>
+        <span class="project-status status-live">● Live</span>
+      </div>
+      <div class="pipeline">
+        <div class="pipe-step" style="--step-color:var(--blue)"><span class="k">Trigger</span><span class="v">Document upload</span></div>
+        <div class="pipe-step" style="--step-color:var(--violet)"><span class="k">Process</span><span class="v">Chunking + Gemini embeddings (768-dim)</span></div>
+        <div class="pipe-step" style="--step-color:var(--teal)"><span class="k">Integrate</span><span class="v">Pinecone vector index</span></div>
+        <div class="pipe-step" style="--step-color:var(--amber)"><span class="k">Outcome</span><span class="v">Semantic Q&A over real docs</span></div>
+      </div>
+      <p class="project-desc">A retrieval-augmented pipeline so a business can ask questions against its own documents instead of a generic model guessing. Handles chunking, embedding, and semantic retrieval end-to-end — an employee asks a question, the agent pulls the relevant passage from the company's own docs before answering.</p>
+      <div class="chips">
+        <span class="chip">n8n</span><span class="chip">Gemini text-embedding-004</span><span class="chip">Pinecone</span>
+      </div>
+    </div>
+
+    <div class="other-projects">
+      <div class="mini-card">
+        <h4>Sentiment Analysis Web App</h4>
+        <p>NLP model classifying reviews positive/negative/neutral at 88% accuracy, served via a Flask REST API with a live dashboard.</p>
+        <div class="chips"><span class="chip">Python</span><span class="chip">NLTK</span><span class="chip">Flask</span></div>
+      </div>
+      <div class="mini-card">
+        <h4>AI Chatbot — Intent Recognition</h4>
+        <p>Chatbot understanding user intent at 95%+ accuracy, with a real-time chat UI on a Flask backend.</p>
+        <div class="chips"><span class="chip">TensorFlow</span><span class="chip">Flask</span><span class="chip">JavaScript</span></div>
+      </div>
+      <div class="mini-card">
+        <h4>AI CodeLearn Hub — Final Year Project</h4>
+        <p>Full-stack coding education platform with in-browser editor, AI-assisted review, and adaptive learning paths.</p>
+        <div class="chips"><span class="chip">React</span><span class="chip">OpenAI API</span><span class="chip">Docker</span></div>
+      </div>
+      <div class="mini-card">
+        <h4>IoT People Counter</h4>
+        <p>ESP32 + ultrasonic sensor system counting room occupancy in real time, paired with a mobile app.</p>
+        <div class="chips"><span class="chip">ESP32</span><span class="chip">Wi-Fi</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad" id="skills">
+  <div class="wrap">
+    <div class="head-row">
+      <div>
+        <div class="head-tag" style="color:var(--blue)">03 — Toolkit</div>
+        <h2>What I build with</h2>
+      </div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group" style="--group-color:var(--pink)">
+        <h4>Computer Vision</h4>
+        <div class="chips">
+          <span class="chip">Object Detection (YOLOv8)</span><span class="chip">Ultralytics</span><span class="chip">PyTorch</span>
+          <span class="chip">OpenCV</span><span class="chip">NumPy / Pandas</span><span class="chip">Matplotlib</span>
+          <span class="chip">Data Augmentation</span><span class="chip">mAP / IoU Evaluation</span><span class="chip">Roboflow</span>
+        </div>
+      </div>
       <div class="skill-group" style="--group-color:var(--violet)">
         <h4>AI / LLM & Agent Development</h4>
         <div class="chips">
@@ -623,7 +1318,7 @@
   <div class="wrap">
     <div class="contact-box">
       <h2>Let's build something that ships.</h2>
-      <p>Open to AI Agent Developer / Automation Engineer roles — remote or Lahore/Faisalabad-based.</p>
+    
       <div class="contact-links">
         <a class="btn btn-primary" href="mailto:noor03012066@gmail.com">noor03012066@gmail.com</a>
         <a class="btn btn-ghost" href="https://github.com/Mahnoor-prog" target="_blank" rel="noopener">GitHub ↗</a>
@@ -634,7 +1329,7 @@
 </section>
 
 <footer>
-  <div class="wrap">Mah Noor — Faisalabad, Pakistan · Built by hand, not a template.</div>
+  <div class="wrap">Mah Noor — Faisalabad, Pakistan.</div>
 </footer>
 
 </body>
